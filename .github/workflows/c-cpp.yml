@@ -21,6 +21,7 @@ jobs:
       run: make check
     - name: make distcheck
       run: make distcheck
-    - name: Run Cpp
+    - name: Build and Run Hello.cpp
       run: |
-        hello.cpp
+        g++ hello.cpp -o hello
+        ./hello
